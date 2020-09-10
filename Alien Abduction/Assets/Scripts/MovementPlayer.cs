@@ -27,8 +27,8 @@ public class MovementPlayer : MonoBehaviour
 
     void FixedUpdate()
     {
-        Vector2 oldValue = oRigidBody.velocity;
-        Vector2 newValue = moveAction.ReadValue<Vector2>().normalized * Speed;
+        Vector3 oldValue = oRigidBody.velocity;
+        Vector3 newValue = Accelerometer.current.acceleration.ReadValue().normalized * Speed;
 
         newValue = Vector2.Lerp(oldValue, newValue, .1f);
         oRigidBody.velocity = newValue;
@@ -37,10 +37,12 @@ public class MovementPlayer : MonoBehaviour
     private void OnEnable()
     {
         moveAction.Enable();
+        InputSystem.EnableDevice(Accelerometer.current);
     }
 
     private void OnDisable()
     {
         moveAction.Disable();
+        InputSystem.DisableDevice(Accelerometer.current);
     }
 }
