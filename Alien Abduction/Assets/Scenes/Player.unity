@@ -361,6 +361,46 @@ MonoBehaviour:
       m_Groups: 
       m_Action: Move
       m_Flags: 8
+    - m_Name: 2D Vector
+      m_Id: 80a4a7bb-4abb-49ff-b56e-f969a2c53e1a
+      m_Path: 2DVector
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Move
+      m_Flags: 4
+    - m_Name: up
+      m_Id: d9df2ab6-2390-4726-b597-e6266b5b50f4
+      m_Path: <Accelerometer>/acceleration/z
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Move
+      m_Flags: 8
+    - m_Name: down
+      m_Id: 33059a9f-c422-418e-8119-4d678271bd41
+      m_Path: <Accelerometer>/acceleration/z
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Move
+      m_Flags: 8
+    - m_Name: left
+      m_Id: dfae3129-277a-4ec8-baaa-6a1fe60b64e0
+      m_Path: <Accelerometer>/acceleration/x
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Move
+      m_Flags: 8
+    - m_Name: right
+      m_Id: aa7a3bda-ed74-4720-bfd3-297a12bf0880
+      m_Path: <Accelerometer>/acceleration/x
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Move
+      m_Flags: 8
   Speed: 5
 --- !u!61 &976129426
 BoxCollider2D:
