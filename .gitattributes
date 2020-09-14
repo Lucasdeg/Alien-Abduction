@@ -1,0 +1,4 @@
+*.pbxproj binary merge=union
+*.unity binary
+*.prefab binary
+*.asset binary
